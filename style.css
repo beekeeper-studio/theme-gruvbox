@@ -1,0 +1,198 @@
+/* Gruvbox Light, medium contrast — https://github.com/morhetz/gruvbox */
+.light-theme {
+  /* UI colors */
+  --background: #fbf1c7;
+  --base-gray: #928374;
+  --base-blue: #076678;
+  --base-green: #79740e;
+  --base-yellow: #b57614;
+  --base-orange: #af3a03;
+  --base-red: #9d0006;
+  --base-purple: #8f3f71;
+  --base-pink: #8f3f71;
+  --base-accent: #af3a03;
+
+  /* Gray scale pinned to the bg0–fg0 ramp. The generated scale drifts away
+   * from Gruvbox's warm browns. */
+  --gray-1: #fbf1c7;
+  --gray-2: #f2e5bc;
+  --gray-3: #ebdbb2;
+  --gray-4: #e0d0aa;
+  --gray-5: #d5c4a1;
+  --gray-6: #c9b99a;
+  --gray-7: #bdae93;
+  --gray-8: #a89984;
+  --gray-9: #928374;
+  --gray-10: #7c6f64;
+  --gray-11: #3c3836;
+  --gray-12: #282828;
+  --gray-a1: #28282803;
+  --gray-a2: #2828280e;
+  --gray-a3: #2828281a;
+  --gray-a4: #28282827;
+  --gray-a5: #28282835;
+  --gray-a6: #28282843;
+  --gray-a7: #28282851;
+  --gray-a8: #2828286a;
+  --gray-a9: #28282885;
+  --gray-a10: #2828289f;
+  --gray-a11: #282828e9;
+  --gray-a12: #282828ff;
+
+  /* Editor colors */
+  --gruvbox-bg: #fbf1c7;
+  --gruvbox-fg: #3c3836;
+  --gruvbox-cursor: #3c3836;
+  --gruvbox-line: #ebdbb2;
+  --gruvbox-selection: #bdae9399;
+  --gruvbox-selection-inactive: #bdae934d;
+  --gruvbox-find-match: #af3a0359;
+  --gruvbox-find-match-inactive: #b5761433;
+  --gruvbox-line-number: #a89984;
+  --gruvbox-line-number-active: #b57614;
+  --gruvbox-indent-guide: #ebdbb2;
+  --gruvbox-indent-guide-active: #d5c4a1;
+  --gruvbox-punctuation: #7c6f64;
+
+  /* Syntax colors */
+  --gruvbox-comment: #928374;
+  --gruvbox-red: #9d0006;
+  --gruvbox-green: #79740e;
+  --gruvbox-yellow: #b57614;
+  --gruvbox-blue: #076678;
+  --gruvbox-purple: #8f3f71;
+  --gruvbox-aqua: #427b58;
+  --gruvbox-orange: #af3a03;
+}
+
+/* Gruvbox Dark, hard contrast — https://github.com/morhetz/gruvbox */
+.dark-theme {
+  /* UI colors */
+  --background: #1d2021;
+  --base-gray: #928374;
+  --base-blue: #83a598;
+  --base-green: #b8bb26;
+  --base-yellow: #fabd2f;
+  --base-orange: #fe8019;
+  --base-red: #fb4934;
+  --base-purple: #d3869b;
+  --base-pink: #d3869b;
+  --base-accent: #fe8019;
+
+  --primary-contrast: #1d2021;
+  --orange-contrast: #1d2021;
+  --yellow-contrast: #1d2021;
+  --green-contrast: #1d2021;
+  --blue-contrast: #1d2021;
+  --purple-contrast: #1d2021;
+  --pink-contrast: #1d2021;
+
+  /* Gray scale pinned to the bg0_h–fg1 ramp. The generated scale drifts away
+   * from Gruvbox's warm browns. */
+  --gray-1: #1d2021;
+  --gray-2: #282828;
+  --gray-3: #32302f;
+  --gray-4: #3c3836;
+  --gray-5: #46413e;
+  --gray-6: #504945;
+  --gray-7: #665c54;
+  --gray-8: #7c6f64;
+  --gray-9: #928374;
+  --gray-10: #a89984;
+  --gray-11: #d5c4a1;
+  --gray-12: #ebdbb2;
+  --gray-a1: #ebdbb203;
+  --gray-a2: #ebdbb20c;
+  --gray-a3: #ebdbb218;
+  --gray-a4: #ebdbb224;
+  --gray-a5: #ebdbb231;
+  --gray-a6: #ebdbb23d;
+  --gray-a7: #ebdbb257;
+  --gray-a8: #ebdbb272;
+  --gray-a9: #ebdbb28e;
+  --gray-a10: #ebdbb2aa;
+  --gray-a11: #ebdbb2e2;
+  --gray-a12: #ebdbb2ff;
+
+  /* Editor colors */
+  --gruvbox-bg: #1d2021;
+  --gruvbox-fg: #ebdbb2;
+  --gruvbox-cursor: #ebdbb2;
+  --gruvbox-line: #3c3836;
+  --gruvbox-selection: #665c5499;
+  --gruvbox-selection-inactive: #665c544d;
+  --gruvbox-find-match: #fe801959;
+  --gruvbox-find-match-inactive: #fabd2f33;
+  --gruvbox-line-number: #7c6f64;
+  --gruvbox-line-number-active: #fabd2f;
+  --gruvbox-indent-guide: #3c3836;
+  --gruvbox-indent-guide-active: #504945;
+  --gruvbox-punctuation: #a89984;
+
+  /* Syntax colors */
+  --gruvbox-comment: #928374;
+  --gruvbox-red: #fb4934;
+  --gruvbox-green: #b8bb26;
+  --gruvbox-yellow: #fabd2f;
+  --gruvbox-blue: #83a598;
+  --gruvbox-purple: #d3869b;
+  --gruvbox-aqua: #8ec07c;
+  --gruvbox-orange: #fe8019;
+}
+
+.light-theme,
+.dark-theme {
+  /* ===== Editor ===== */
+
+  /* Editor chrome */
+  --editor-bg: var(--gruvbox-bg);
+  --editor-fg: var(--gruvbox-fg);
+  --editor-cursor-bg: var(--gruvbox-cursor);
+  --editor-selected-bg: var(--gruvbox-selection);
+  --editor-activeline-bg: var(--gruvbox-line);
+  --editor-activeline-gutter-bg: var(--gruvbox-line);
+  --editor-error-fg: var(--gruvbox-red);
+  --editor-gutter-bg: var(--gruvbox-bg);
+  --editor-linenumber-fg: var(--gruvbox-line-number);
+  --editor-linenumber-active-fg: var(--gruvbox-line-number-active);
+  --editor-foldgutter-fg: var(--gruvbox-line-number);
+  --editor-foldgutter-fg-hover: var(--gruvbox-fg);
+  --editor-indent-marker-bg: var(--gruvbox-indent-guide);
+  --editor-indent-marker-active-bg: var(--gruvbox-indent-guide-active);
+
+  /* Matches and markers */
+  --editor-guttermarker-subtle-fg: var(--gruvbox-line-number);
+  --editor-matchingselection-bg: var(--gruvbox-selection-inactive);
+  --editor-searchmatch-bg: var(--gruvbox-find-match-inactive);
+  --editor-searchmatch-selected-bg: var(--gruvbox-find-match);
+  --editor-matchingbracket-fg: var(--gruvbox-fg);
+  --editor-matchingbracket-bg: var(--gruvbox-selection-inactive);
+  --editor-fatcursor-bg: var(--gruvbox-cursor);
+
+  /* ===== Color Syntax ===== */
+
+  --syntax-comment: var(--gruvbox-comment);
+  --syntax-constant: var(--gruvbox-purple);
+  --syntax-decorator: var(--gruvbox-orange);
+  --syntax-function: var(--gruvbox-aqua);
+  --syntax-keyword: var(--gruvbox-red);
+  --syntax-link: var(--gruvbox-blue);
+  --syntax-punctuation: var(--gruvbox-punctuation);
+  --syntax-string: var(--gruvbox-green);
+  --syntax-type: var(--gruvbox-yellow);
+  --syntax-variable: var(--gruvbox-fg);
+  --syntax-diff: var(--gruvbox-red);
+
+  --editor-self-fg: var(--gruvbox-blue);
+  --editor-regexp-fg: var(--gruvbox-orange);
+  --editor-escape-fg: var(--gruvbox-orange);
+  --editor-operator-fg: var(--gruvbox-orange);
+  --editor-attributeName-fg: var(--gruvbox-blue);
+  --editor-heading-fg: var(--gruvbox-yellow);
+  --editor-strikethrough-fg: var(--gruvbox-comment);
+
+  /* ===== Mongo Shell ===== */
+
+  --mongo-shell-mongo-prompt-fg: var(--gruvbox-orange);
+  --mongo-shell-ansi-output-fg: var(--gruvbox-fg);
+}
